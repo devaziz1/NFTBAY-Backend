@@ -1,0 +1,70 @@
+##################### Admin Signup
+POST  http://localhost:8080/admin/signup
+Content-Type: application/json
+
+{
+   "name":"Salman Khalid",
+    "password":"salman",
+    "email":"salman01@gmail.com"
+}
+
+##################### Admin login
+POST  http://localhost:8080/admin/login
+Content-Type: application/json
+
+{
+    
+    "email":"salman001@gmail.com",
+    "password":"salman"
+}
+
+
+##################### Get Admin QR code
+GET  http://localhost:8080/admin/get-qrcode/salman001@gmail.com
+
+##################### Get all users
+GET  http://localhost:8080/admin/getAllUsers
+
+
+##################### Get all subscriptions
+GET  http://localhost:8080/admin/getSubscriptionDetails
+
+##################### Get all subscriptions
+GET  http://localhost:8080/admin/getReecentSubscriptions
+
+
+##################### Get all Purchases History
+GET  http://localhost:8080/admin/getPurchaseHistory
+
+
+##################### Get all Purchases History
+GET  http://localhost:8080/admin/profileDetails/salman001@gmail.com
+
+##################### Get totalRevenue
+GET  http://localhost:8080/admin/totalRevenue-visits/salman001@gmail.com
+
+##################### Get total MOnthly subscriptios
+GET  http://localhost:8080/admin/monthlysubs/salman001@gmail.com
+
+##################### Get total Vists
+GET  http://localhost:8080/admin/new-visits
+
+
+##################### changeSubsStatusP
+POST  http://localhost:8080/admin/changeSubsStatusP/aziznaseer666@gmail.com
+
+##################### changeSubsStatusC
+POST  http://localhost:8080/admin/changeSubsStatusC/saad123@gmail.com
+
+##################### changeSubsStatusC
+DELETE   http://localhost:8080/admin/deleteUser/Uzair9876@gmail.com
+
+
+##################### Admin login
+POST  http://localhost:8080/admin/addEmailToNewsletter
+Content-Type: application/json
+
+{
+    
+    "newEmail":"salman123@gmail.com"
+}

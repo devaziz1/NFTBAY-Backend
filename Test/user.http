@@ -1,0 +1,123 @@
+##################### User Signup
+POST  http://localhost:8080/user/signup
+Content-Type: application/json
+
+{
+   "fname":"Uzair",
+   "lname":"Naseer",
+    "password":"uzair493",
+    "email":"eqweqeqe23@gmail.com"
+}
+
+##################### User login
+POST  http://localhost:8080/user/login
+Content-Type: application/json
+
+{
+    
+    "email":"aziznaseer563@gmail.com",
+    "password":"mypass"
+}
+
+
+##################### Seller Step 1
+POST  http://localhost:8080/user/becomeseller1
+Content-Type: application/json
+
+{
+    
+    "email":"aziznase234213@gmail.com",
+    "password":"mypass",
+    "name":"Uzair Naseer"
+}
+
+##################### Seller Step 3
+POST  http://localhost:8080/user/becomeseller3
+Content-Type: application/json
+
+{
+    
+    "email":"afnan123@gmail.com",
+    "paymentReferenceNO":"djashd8489324"
+}
+
+##################### Buy NFT
+POST  http://localhost:8080/user/buyNFT
+Content-Type: application/json
+
+{
+    
+    "buyerName":"Aziz",
+    "buyerEmail":"aziz182372@gmail.com",
+    "sellerEmail":"afnan123@gmail.com",
+    "referenceNumber":"54dfs434824923",
+    "amount":"1.99"
+}
+
+##################### Get All NFT
+GET  http://localhost:8080/user/getAllNfts
+
+
+##################### Get seller NFT Order
+GET  http://localhost:8080/user/getAllorders/afnan123@gmail.com
+
+##################### Renew Subscription
+POST  http://localhost:8080/user/renewSubscription
+Content-Type: application/json
+
+{
+    
+    "email":"afnan123@gmail.com",
+    "paymentReferenceNO":"JHD232CNX",
+    "adminNote":"Application performace is not good"
+
+}
+
+##################### Get NFT BY ID
+GET  http://localhost:8080/user/getnftID/6533a953b1206230644c4134
+
+##################### Get NFT BY ID
+GET  http://localhost:8080/user/getAllSellerNFTs/afnan123@gmail.com
+
+
+##################### Create Subscription
+POST  http://localhost:8080/user/createSubscription
+Content-Type: application/json
+
+{
+    
+    "email":"afnan123@gmail.com",
+    "paymentReferenceNO":"a#jds623"
+}
+
+##################### Get NFT BY ID
+GET  http://localhost:8080/user/getnftDetails/6533a953b1206230644c4134
+
+
+##################### Get all Purchases History
+GET  http://localhost:8080/user/userProfileDtails/Ali123@gmail.com
+
+##################### Get NFT By Category Name
+GET  http://localhost:8080/user/getnftbyCategory/Music?page=1&nftName=BotBattlers
+
+##################### Get NFT By Category Name
+GET  http://localhost:8080/user/getPendingNFTsMaylike/Art
+
+##################### Get NFT By Category Name
+GET  http://localhost:8080/user/getnftCount/aziznaseer666@gmail.com
+
+
+##################### Get seller QRcode
+GET  http://localhost:8080/user/getSellerQrcode/aziznaseer666@gmail.com
+
+
+##################### Get seller QRcode
+GET  http://localhost:8080/user/getAllPendingNFTsAndUsers
+
+
+##################### Change NFT status
+POST  http://localhost:8080/user/changeNftStatusS/653c290306365b9ad6cfcc3f
+
+
+##################### Get NFT By Category Name
+GET  http://localhost:8080/user/getnftmylike/Art
